@@ -52,6 +52,7 @@ body {
   -moz-osx-font-smoothing: grayscale; }
 
 /* Heading */
+
 h1,
 .uk-h1,
 h2,
@@ -336,15 +337,6 @@ strong {
   font-size:12px;
   color:#2d76f1;
 }
-.pr__hero__wrap {
-  position: relative;
-  background-color: #fafafa;
-  background-repeat: no-repeat;
-  background-size: 640px;
-  /* background-size: 1000px; */
-  background-position: left;
-  display: block;
-  z-index: 99; }
   .pr__hero__wrap.pr__dark {
     background-color: rgb(0, 0, 0); }
     .pr__hero__wrap.pr__dark .title,
@@ -353,38 +345,8 @@ strong {
     .pr__hero__wrap.pr__dark .description,
     .pr__hero__wrap.pr__dark .uk-breadcrumb > :last-child > * {
       color: #FFFFFF !important; }
-    .pr__hero__wrap.pr__dark .uk-breadcrumb > :nth-child(n+2):not(.uk-first-column)::before {
-      color: #FFFFFF;
-      opacity: .5; }
     .pr__hero__wrap.pr__dark .item.feature-box .inner {
       background-color: #1b1b1b; }
-
-body.page-template .pr__hero__wrap {
-  background-color: #101010;
-  background-position: center;
-  background-size: cover !important;
-  background-position: center !important; }
-  body.page-template .pr__hero__wrap:before {
-    content: "";
-    background-color: rgba(0, 0, 0, 0.9);
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    z-index: 0; }
-  body.page-template .pr__hero__wrap > * {
-    position: relative;
-    z-index: 99; }
-  body.page-template .pr__hero__wrap .pr__header .inner .logo .brand {
-    background-position-y: -28px; }
-  body.page-template .pr__hero__wrap .pr__header .inner a,
-  body.page-template .pr__hero__wrap .pr__header .inner .lang {
-    color: #FFFFFF !important; }
-  body.page-template .pr__hero__wrap .pr__header .inner .navbar-tigger > span {
-    background-color: #FFFFFF; }
-  body.page-template .pr__hero__wrap .pr__header.uk-active {
-    background-color: rgba(0, 0, 0, 0.9); }
 
 body.single-post .hero-content {
   display: -webkit-box;
