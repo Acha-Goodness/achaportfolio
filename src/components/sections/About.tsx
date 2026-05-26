@@ -2,7 +2,7 @@
 
 import React from "react";
 import Image from "next/image";
-import acha from "@/asstes/achaPro0.png"
+import acha from "@/assets/achaPro0.png"
 
 export default function About() {
   return (
