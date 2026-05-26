@@ -2,6 +2,7 @@
 
 import React from "react";
 import Image from "next/image";
+import acha from "@/asstes/achaPro0.png"
 
 export default function About() {
   return (
@@ -22,7 +23,7 @@ export default function About() {
           </div>
           <div className="max-w-xl lg:text-right">
             <p className="text-slate-400 text-base md:text-lg font-light leading-relaxed">
-              I work together, across boundaries, to meet the needs of companies and to help teams win. 
+              I work together, across boundaries, to meet the needs of companies and to help teams win.
               I value collaboration, encourage team growth, and take pride in delivering robust systems.
             </p>
           </div>
@@ -36,7 +37,7 @@ export default function About() {
             <div className="relative aspect-[3/4] w-full rounded-2xl overflow-hidden glass-panel border border-white/10 flex items-center justify-center p-2">
               <div className="relative w-full h-full rounded-xl overflow-hidden">
                 <Image
-                  src="/assets/Acha.jpg"
+                  src={acha}
                   alt="Acha Goodness in action"
                   fill
                   className="object-cover transition-transform duration-[1.5s] group-hover:scale-105"
@@ -51,26 +52,26 @@ export default function About() {
           <div className="col-span-1 lg:col-span-7 flex flex-col justify-center">
             <div className="glass-panel p-8 md:p-10 rounded-2xl border border-white/5 bg-slate-900/25 relative overflow-hidden">
               <div className="absolute top-0 right-0 w-24 h-24 bg-accent-gold/5 rounded-full blur-2xl" />
-              
+
               <h3 className="text-2xl font-bold text-white mb-6 tracking-tight flex items-center gap-3">
                 <span className="w-1.5 h-6 bg-accent-gold rounded-full" />
                 Who I am — Bios
               </h3>
-              
+
               <div className="text-slate-300 space-y-5 leading-relaxed font-light text-sm md:text-base">
                 <p>
-                  I am a diligent, professional, standard-driven, and result-focused full-stack engineer 
-                  with diverse skills and qualities. I have five years of experience working as a full-stack 
+                  I am a diligent, professional, standard-driven, and result-focused full-stack engineer
+                  with diverse skills and qualities. I have five years of experience working as a full-stack
                   engineer on both web and mobile platforms, utilizing modern technologies to develop software.
                 </p>
                 <p>
-                  I am a high-achiever. In my last job, I was the frontend lead engineer, where I took the lead during 
-                  challenging situations and trained new team members as they joined the organization. 
-                  I value feedback and constructive criticism, take full ownership of my professional development, 
+                  I am a high-achiever. In my last job, I was the frontend lead engineer, where I took the lead during
+                  challenging situations and trained new team members as they joined the organization.
+                  I value feedback and constructive criticism, take full ownership of my professional development,
                   and always support my co-workers to achieve the team&apos;s mission.
                 </p>
                 <p>
-                  I strive to be a brilliant role model for every company I work for, driving new initiatives 
+                  I strive to be a brilliant role model for every company I work for, driving new initiatives
                   to ensure they become commercial successes.
                 </p>
               </div>
@@ -94,7 +95,7 @@ export default function About() {
               <h4 className="text-lg font-bold text-white">Teamwork</h4>
             </div>
             <p className="text-slate-400 text-sm font-light leading-relaxed">
-              Committed, creative, and collaborative. Cherishing community and celebrating unique talents, 
+              Committed, creative, and collaborative. Cherishing community and celebrating unique talents,
               passions, and backgrounds is central to my work ethic.
             </p>
           </div>
@@ -112,7 +113,7 @@ export default function About() {
               <h4 className="text-lg font-bold text-white">Philosophy</h4>
             </div>
             <p className="text-slate-400 text-sm font-light leading-relaxed">
-              Ideas matter when they become real. My purpose is making dreams reality through clean architecture, 
+              Ideas matter when they become real. My purpose is making dreams reality through clean architecture,
               delivering incredible returns with a perfect balance of form and function.
             </p>
           </div>
@@ -129,7 +130,7 @@ export default function About() {
               <h4 className="text-lg font-bold text-white">Location</h4>
             </div>
             <p className="text-slate-400 text-sm font-light leading-relaxed">
-              Lagos, Nigeria. Open to remote work options globally, cross-timezone integrations, 
+              Lagos, Nigeria. Open to remote work options globally, cross-timezone integrations,
               and on-site collaborations where necessary.
             </p>
           </div>

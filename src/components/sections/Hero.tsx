@@ -4,7 +4,7 @@ import React from "react";
 import Image from "next/image";
 import SocialPill from "../SocialPill";
 import { poppins } from "@/fonts/fonts";
-import acha from "@/asstes/acha.jpg";
+import acha from "@/asstes/achaPro.png";
 
 interface HeroProps {
   onHireMeClick: () => void;
