@@ -1,13 +1,20 @@
 "use client";
 
 import React, { useState } from "react";
-import Image from "next/image";
+import Image, { StaticImageData } from "next/image";
+import ENUM from "@/assets/ENUM.png";
+import KOKO from "@/assets/KOKO.png";
+import WE from "@/assets/WE_IMMERSIVE.png";
+import EStore from "@/assets/estore.jpg";
+import KUDU from "@/assets/KUDU_MART.png";
+import Movie from "@/assets/MovieMenions.jpg";
+import African from "@/assets/africanProverb.png";
 
 interface Project {
   title: string;
   category: string;
   tags: string[];
-  imageUrl: string;
+  imageUrl: StaticImageData;
   linkUrl: string;
   description: string;
 }
@@ -22,7 +29,7 @@ export default function Works() {
       title: "Enum Africa",
       category: "E-Learning",
       tags: ["React.js", "Node.js", "MongoDB", "Redux"],
-      imageUrl: "/assets/ENUM.png",
+      imageUrl: ENUM,
       linkUrl: "https://dev.enumverse.com",
       description: "An online digital skills learning and talent hunt platform connecting developers with opportunities.",
     },
@@ -30,7 +37,7 @@ export default function Works() {
       title: "Koko Health",
       category: "Web App",
       tags: ["React.js", "Context API", "Sass", "RESTful API"],
-      imageUrl: "/assets/KOKO.png",
+      imageUrl: KOKO,
       linkUrl: "https://kokohealthcare.com",
       description: "A comprehensive digital medical records and health management platform for clinics and patient desk operations.",
     },
@@ -38,7 +45,7 @@ export default function Works() {
       title: "WE_IMMERSIVE",
       category: "E-Learning",
       tags: ["HTML5", "CSS3", "JavaScript", "Animation"],
-      imageUrl: "/assets/WE_IMMERSIVE.png",
+      imageUrl: WE,
       linkUrl: "https://we-immersive.netlify.app/",
       description: "An immersive e-learning interface featuring engaging layout dynamics and modern educational elements.",
     },
@@ -46,7 +53,7 @@ export default function Works() {
       title: "E-Store",
       category: "E-Commerce",
       tags: ["React.js", "Tailwind CSS", "Redux Toolkit", "API"],
-      imageUrl: "/assets/estore.jpg",
+      imageUrl: EStore,
       linkUrl: "https://acha-goodness.github.io/estore/",
       description: "A responsive, feature-rich electronic products retail shopping catalog and digital checkout interface.",
     },
@@ -54,7 +61,7 @@ export default function Works() {
       title: "Kudu Mart",
       category: "E-Commerce",
       tags: ["React.js", "Firebase", "Styled Components"],
-      imageUrl: "/assets/KUDU_MART.png",
+      imageUrl: KUDU,
       linkUrl: "https://kudu-web.netlify.app/",
       description: "A multi-vendor digital e-shopping platform with integrated cart flow and real-time database updates.",
     },
@@ -62,7 +69,7 @@ export default function Works() {
       title: "Movie Minions",
       category: "Web App",
       tags: ["HTML5", "CSS3", "JavaScript", "Movie API"],
-      imageUrl: "/assets/MovieMenions.jpg",
+      imageUrl: Movie,
       linkUrl: "https://acha-goodness.github.io/movieminions/",
       description: "An interactive online movie exploration and streaming portal hooked into the TMDB open API database.",
     },
@@ -70,7 +77,7 @@ export default function Works() {
       title: "African Proverbs",
       category: "E-Learning",
       tags: ["HTML5", "CSS3", "JavaScript", "Responsive Design"],
-      imageUrl: "/assets/africanProverb.png",
+      imageUrl: African,
       linkUrl: "https://www.africanproverbs.com",
       description: "A cultural reservation platform detailing diverse traditional African proverbs, meanings, and historical contexts.",
     },
