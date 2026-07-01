@@ -68,7 +68,7 @@ export default function Blog() {
 
       <div className="max-w-7xl mx-auto px-6 md:px-12">
         {/* Section Heading */}
-        <div className="max-w-xl mb-16 md:mb-20">
+        <div className="max-w-xl mb-16 md:mb-20 reveal-on-scroll">
           <h2 className="text-4xl md:text-5xl font-black text-white mb-4 tracking-tight">
             Latest News.
           </h2>
@@ -82,9 +82,9 @@ export default function Blog() {
           {posts.map((post, index) => (
             <article
               key={post.title}
-              className="glass-panel rounded-2xl border border-white/5 bg-slate-900/10 overflow-hidden group flex flex-col h-full transition-all duration-300 hover:border-accent-gold/20"
+              className="glass-panel rounded-2xl border border-white/5 bg-slate-900/10 overflow-hidden group flex flex-col h-full transition-all duration-300 hover:border-accent-gold/20 reveal-on-scroll"
               style={{
-                animationDelay: `${index * 100}ms`,
+                transitionDelay: `${index * 100}ms`,
               }}
             >
               {/* Blog Card Image */}

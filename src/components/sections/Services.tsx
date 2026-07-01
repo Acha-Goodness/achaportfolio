@@ -78,7 +78,7 @@ export default function Services() {
 
       <div className="max-w-7xl mx-auto px-6 md:px-12">
         {/* Section Heading */}
-        <div className="max-w-xl mb-16 md:mb-24">
+        <div className="max-w-xl mb-16 md:mb-24 reveal-on-scroll">
           <h2 className="text-4xl md:text-5xl font-black text-white mb-4 tracking-tight">
             Services.
           </h2>
@@ -92,9 +92,9 @@ export default function Services() {
           {services.map((service, index) => (
             <div
               key={service.title}
-              className="glass-panel glass-panel-hover p-8 md:p-10 rounded-2xl flex flex-col items-start relative group transition-all duration-500 overflow-hidden"
+              className="glass-panel glass-panel-hover p-8 md:p-10 rounded-2xl flex flex-col items-start relative group transition-all duration-500 overflow-hidden reveal-on-scroll"
               style={{
-                animationDelay: `${index * 100}ms`,
+                transitionDelay: `${index * 100}ms`,
               }}
             >
               {/* Corner soft light highlight */}

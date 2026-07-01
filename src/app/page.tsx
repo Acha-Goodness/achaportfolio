@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import StarryBackdrop from "@/components/StarryBackdrop";
 import Navbar from "@/components/Navbar";
 import Hero from "@/components/sections/Hero";
@@ -12,6 +12,53 @@ import ContactModal from "@/components/ContactModal";
 
 export default function Home() {
   const [isContactOpen, setIsContactOpen] = useState(false);
+
+  useEffect(() => {
+    if (typeof window === "undefined") return;
+
+    // Check if browser does NOT support native scroll-driven animations
+    if (!CSS.supports("(animation-timeline: view()) and (animation-range: entry)")) {
+      const observer = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add("revealed");
+              observer.unobserve(entry.target);
+            }
+          });
+        },
+        {
+          threshold: 0.05,
+          rootMargin: "0px 0px -50px 0px",
+        }
+      );
+
+      // Helper to find and observe unrevealed target elements
+      const observeElements = () => {
+        document.querySelectorAll(".reveal-on-scroll:not(.revealed)").forEach((el) => {
+          observer.observe(el);
+        });
+      };
+
+      // Initial pass
+      observeElements();
+
+      // Use MutationObserver to watch for DOM modifications (e.g. category filter changes)
+      const mutationObserver = new MutationObserver(() => {
+        observeElements();
+      });
+
+      mutationObserver.observe(document.body, {
+        childList: true,
+        subtree: true,
+      });
+
+      return () => {
+        observer.disconnect();
+        mutationObserver.disconnect();
+      };
+    }
+  }, []);
 
   return (
     <div className="relative min-h-screen w-full text-foreground bg-cosmic-gradient selection:bg-accent-gold/30 selection:text-white">

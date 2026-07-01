@@ -12,7 +12,7 @@ export default function About() {
 
       <div className="max-w-7xl mx-auto px-6 md:px-12">
         {/* Section Heading */}
-        <div className="flex flex-col lg:flex-row lg:items-end justify-between gap-6 mb-16 md:mb-24">
+        <div className="flex flex-col lg:flex-row lg:items-end justify-between gap-6 mb-16 md:mb-24 reveal-on-scroll">
           <div className="max-w-xl">
             <h2 className="text-4xl md:text-5xl font-black text-white mb-4 tracking-tight">
               About.
@@ -32,7 +32,7 @@ export default function About() {
         {/* Dynamic Image & Bio Columns */}
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center mb-20">
           {/* Left Column: Portrait Framing card */}
-          <div className="col-span-1 lg:col-span-5 relative group">
+          <div className="col-span-1 lg:col-span-5 relative group reveal-on-scroll">
             <div className="absolute -inset-2 bg-gradient-to-r from-accent-gold/20 to-transparent rounded-2xl blur-lg opacity-30 group-hover:opacity-60 transition duration-1000" />
             <div className="relative aspect-[3/4] w-full rounded-2xl overflow-hidden glass-panel border border-white/10 flex items-center justify-center p-2">
               <div className="relative w-full h-full rounded-xl overflow-hidden">
@@ -49,7 +49,10 @@ export default function About() {
           </div>
 
           {/* Right Column: Detailed Personal Bio */}
-          <div className="col-span-1 lg:col-span-7 flex flex-col justify-center">
+          <div 
+            className="col-span-1 lg:col-span-7 flex flex-col justify-center reveal-on-scroll"
+            style={{ transitionDelay: "150ms" }}
+          >
             <div className="glass-panel p-8 md:p-10 rounded-2xl border border-white/5 bg-slate-900/25 relative overflow-hidden">
               <div className="absolute top-0 right-0 w-24 h-24 bg-accent-gold/5 rounded-full blur-2xl" />
 
@@ -82,7 +85,7 @@ export default function About() {
         {/* Philosophy grid cards matching original about section layout */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           {/* Card 1: Teamwork */}
-          <div className="glass-panel glass-panel-hover p-8 rounded-2xl">
+          <div className="glass-panel glass-panel-hover p-8 rounded-2xl reveal-on-scroll">
             <div className="flex items-center gap-4 mb-4">
               <div className="w-10 h-10 rounded-xl bg-accent-gold/10 flex items-center justify-center text-accent-gold">
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className="w-5 h-5">
@@ -101,7 +104,10 @@ export default function About() {
           </div>
 
           {/* Card 2: Philosophy */}
-          <div className="glass-panel glass-panel-hover p-8 rounded-2xl">
+          <div 
+            className="glass-panel glass-panel-hover p-8 rounded-2xl reveal-on-scroll"
+            style={{ transitionDelay: "100ms" }}
+          >
             <div className="flex items-center gap-4 mb-4">
               <div className="w-10 h-10 rounded-xl bg-accent-gold/10 flex items-center justify-center text-accent-gold">
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className="w-5 h-5">
@@ -119,7 +125,10 @@ export default function About() {
           </div>
 
           {/* Card 3: Location */}
-          <div className="glass-panel glass-panel-hover p-8 rounded-2xl">
+          <div 
+            className="glass-panel glass-panel-hover p-8 rounded-2xl reveal-on-scroll"
+            style={{ transitionDelay: "200ms" }}
+          >
             <div className="flex items-center gap-4 mb-4">
               <div className="w-10 h-10 rounded-xl bg-accent-gold/10 flex items-center justify-center text-accent-gold">
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className="w-5 h-5">

@@ -9,6 +9,7 @@ import EStore from "@/assets/estore.jpg";
 import KUDU from "@/assets/KUDU_MART.png";
 import Movie from "@/assets/MovieMenions.jpg";
 import African from "@/assets/africanProverb.png";
+import Julo from "@/assets/julo.png";
 
 interface Project {
   title: string;
@@ -50,11 +51,11 @@ export default function Works() {
       description: "An immersive e-learning interface featuring engaging layout dynamics and modern educational elements.",
     },
     {
-      title: "E-Store",
+      title: "Julo Energy",
       category: "E-Commerce",
       tags: ["React.js", "Tailwind CSS", "Redux Toolkit", "API"],
-      imageUrl: EStore,
-      linkUrl: "https://acha-goodness.github.io/estore/",
+      imageUrl: Julo,
+      linkUrl: "https://julo-energy-kohl.vercel.app",
       description: "A responsive, feature-rich electronic products retail shopping catalog and digital checkout interface.",
     },
     {
@@ -95,7 +96,7 @@ export default function Works() {
 
       <div className="max-w-7xl mx-auto px-6 md:px-12">
         {/* Section Heading */}
-        <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-16 md:mb-20">
+        <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-16 md:mb-20 reveal-on-scroll">
           <div className="max-w-xl">
             <h2 className="text-4xl md:text-5xl font-black text-white mb-4 tracking-tight">
               Works.
@@ -127,9 +128,9 @@ export default function Works() {
           {filteredProjects.map((project, index) => (
             <div
               key={project.title}
-              className="glass-panel rounded-2xl border border-white/5 bg-slate-900/10 overflow-hidden group flex flex-col h-full"
+              className="glass-panel rounded-2xl border border-white/5 bg-slate-900/10 overflow-hidden group flex flex-col h-full reveal-on-scroll"
               style={{
-                animationDelay: `${index * 100}ms`,
+                transitionDelay: `${index * 100}ms`,
               }}
             >
               {/* Card Image Container */}
