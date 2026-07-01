@@ -5,7 +5,6 @@ import Image, { StaticImageData } from "next/image";
 import ENUM from "@/assets/ENUM.png";
 import KOKO from "@/assets/KOKO.png";
 import WE from "@/assets/WE_IMMERSIVE.png";
-import EStore from "@/assets/estore.jpg";
 import KUDU from "@/assets/KUDU_MART.png";
 import Movie from "@/assets/MovieMenions.jpg";
 import African from "@/assets/africanProverb.png";
